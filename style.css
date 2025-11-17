@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;0,600;1,500;1,600&display=swap");
+
+:root {
+  --primary-50: hsl(260, 100%, 95%);
+  --primary-300: hsl(264, 82%, 80%);
+  --primary-500: hsl(263, 55%, 52%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-100: hsl(214, 17%, 92%);
+  --neutral-200: hsl(0, 0%, 81%);
+  --neutral-400: hsl(224, 10%, 45%);
+  --neutral-500: hsl(217, 19%, 35%);
+  --neutral-dark-blue: hsl(219, 29%, 14%);
+  --neutral-black: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: var(--neutral-100);
+}
+
+.testimonial:nth-child(1) {
+  grid-area: one;
+}
+
+.testimonial:nth-child(2) {
+  grid-area: two;
+}
+
+.testimonial:nth-child(3) {
+  grid-area: three;
+}
+
+.testimonial:nth-child(4) {
+  grid-area: four;
+}
+
+.testimonial:nth-child(5) {
+  grid-area: five;
+}
+
+.testimonials {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+  margin: 2rem;
+}
+
+.testimonial {
+  padding: 2rem;
+  border-radius: 0.5em;
+  box-shadow: 0 10px 10px var(--neutral-200);
+}
+
+@media (min-width: 40em) {
+  .testimonials {
+    grid-template-areas:
+      "one one"
+      "two five"
+      "three five"
+      "four four";
+  }
+}
+
+@media (min-width: 80em) {
+  .testimonials {
+    grid-template-areas:
+      "one one two five"
+      "three four four five";
+  }
+}
+
+.primary {
+  background-color: var(--primary-500);
+  color: var(--neutral-100);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 10%;
+}
+
+.neutral {
+  background-color: var(--neutral-500);
+  color: var(--neutral-100);
+}
+
+.light {
+  background-color: var(--neutral-white);
+  color: var(--neutral-);
+}
+
+.dark {
+  background-color: var(--neutral-dark-blue);
+  color: var(--neutral-200);
+}
+
+.testimonial-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  height: 3rem; /* mmm I don't know about this */
+}
+
+.testimonial-header img {
+  box-shadow: 0 0 5px var(--neutral-white);
+  border-radius: 100%;
+  height: 80%;
+}
+
+.testimonial-header p span {
+  display: block;
+  font-size: 1.2em;
+}
+
+.testimonial h1 {
+  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.testimonial > p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  opacity: 0.9;
+}
+
+.attribution {
+  padding: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
