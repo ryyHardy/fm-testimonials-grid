@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/testimonials-grid-with-3-different-layouts-Dw1Lg2XlEI](https://www.frontendmentor.io/solutions/testimonials-grid-with-3-different-layouts-Dw1Lg2XlEI)
-- Live Site URL: [https://ryyhardy.github.io/frontend-mentor-testimonials-grid/](https://ryyhardy.github.io/frontend-mentor-testimonials-grid/)
+- Live Site URL: [https://ryyhardy.github.io/fm-testimonials-grid/](https://ryyhardy.github.io/fm-testimonials-grid/)
 
 ## My process
 
